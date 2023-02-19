@@ -3,22 +3,14 @@
 
      <h2>Calculadora con Angular</h2>
     
-        <form>
-    
-            <div class="form-group">
-                <label>Operando A</label>
-                <input type="number" class="form-control"[(ngModel)]="opA" name="opA">
-            </div>
-    
-            <div class="form-group">
-                <label>Operando B</label>
-                <input type="number" class="form-control"[(ngModel)]="opB" name="opB">
-            </div>
-    
-            <button class="btn btn-info" (click)="sumar()">Sumar</button>
+      <app-formulario (suma)="resultadoT($event)">
 
-        </form>
+      </app-formulario>
    
-    <p> Resultado: {{ res }} </p>
+     <app-resultado [resultado]="res">
+
+     </app-resultado>
     
     </div>
+
+  

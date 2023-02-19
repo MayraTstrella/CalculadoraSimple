@@ -8,13 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'calc-angular';
 
+  res: number;
 
-  opA = 0;
-  opB = 0;
-  res = 0;
- 
-  sumar():void {
-    this.res = this.opA + this.opB;
+  resultadoT(resultado: number) {
+    this.res = resultado;
   }
 
 }
